@@ -11,7 +11,7 @@ end
 
 config[:meta] = {
   blog: {
-    url: 'http://www.joeycody.com/',
+    url: 'https://www.joeycody.com',
     name: 'Joey Cody',
     description: 'Software Engineer in San Francisco, CA.',
     date_format: '%d %B %Y',
@@ -22,7 +22,7 @@ config[:meta] = {
     name: 'Joey Cody',
     bio: 'Software Engineer in San Francisco, CA.',
     location: 'San Francisco, CA',
-    website: 'http://www.joeycody.com/',
+    website: 'https://www.joeycody.com',
     gravatar_email: 'joeydcody@gmail.com',
     twitter: '@joeycdy',
   },

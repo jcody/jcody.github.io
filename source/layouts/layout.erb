@@ -1,10 +1,15 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="Software Engineer in foggy San Francisco, CA. All things Ruby, Golang, API's and tequila. Especially tequila.">
     <meta name="author" content="Joey Cody">
     <meta name="google-site-verification" content="LVlVLY6LY-WbXw8StiJxTNiX8G76j1YAmXw42VAbDsE" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@joeycdy" />
+    <meta property="og:url" content="<%= current_page.url %>" />
+    <meta property="og:title" content="<%= current_page.data.title %>" />
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Joey Cody" %></title>
