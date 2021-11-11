@@ -9,6 +9,7 @@ gem 'middleman-favicon-maker', '~> 4.0'
 
 # Heroku server config
 gem 'rack-contrib'
+gem 'rack-ssl'
 gem 'puma'
 
 # Styles

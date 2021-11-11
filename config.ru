@@ -3,9 +3,14 @@ require "rubygems"
 require "rack"
 require "middleman/rack"
 require "rack/contrib/try_static"
+require "rack-ssl"
 
 # Build the static site when the app boots
 `bundle exec middleman build`
+
+if ENV["RACK_ENV"] == "production"
+  use Rack::SSL
+end
 
 # Enable proper HEAD responses
 use Rack::Head
