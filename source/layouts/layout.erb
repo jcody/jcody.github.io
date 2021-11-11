@@ -8,7 +8,7 @@
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@joeycdy" />
-    <meta property="og:url" content="<%= current_page.url %>" />
+    <meta property="og:url" content="<%= URI.join(blog_settings.url, current_page.url) %>" />
     <meta property="og:title" content="<%= current_page.data.title %>" />
 
     <!-- Use title if it's in the page YAML frontmatter -->

@@ -13,14 +13,14 @@ config[:meta] = {
   blog: {
     url: 'https://www.joeycody.com',
     name: 'Joey Cody',
-    description: 'Software Engineer in San Francisco, CA.',
+    description: 'Engineering Manager in San Francisco, CA.',
     date_format: '%d %B %Y',
     navigation: true,
     logo: nil,
   },
   author: {
     name: 'Joey Cody',
-    bio: 'Software Engineer in San Francisco, CA.',
+    bio: 'Engineering Manager in San Francisco, CA.',
     location: 'San Francisco, CA',
     website: 'https://www.joeycody.com',
     gravatar_email: 'joeydcody@gmail.com',
