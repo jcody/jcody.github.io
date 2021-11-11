@@ -3,7 +3,7 @@ require "rubygems"
 require "rack"
 require "middleman/rack"
 require "rack/contrib/try_static"
-require "rack-ssl"
+require "rack/ssl"
 
 # Build the static site when the app boots
 `bundle exec middleman build`
