@@ -6,6 +6,7 @@ gem 'middleman', '~> 4.3'
 gem 'middleman-blog', '~> 4.0.0'
 gem 'middleman-livereload', '~> 3.4.6'
 gem 'middleman-favicon-maker', '~> 4.0'
+gem 'middleman-deploy'
 
 # Heroku server config
 gem 'rack-contrib'
