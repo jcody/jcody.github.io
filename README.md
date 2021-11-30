@@ -10,13 +10,13 @@ bundle exec middleman build
 Static site should have been generated in the `/tmp` directory. Preview with `open tmp/index.html`.
 
 ### Deployment
-Heroku should be added as a git remote url. Then a quick:
 
-```shell
-git push heroku master
+Deployments leverage the [`middleman-gh-pages`](https://github.com/edgecase/middleman-gh-pages) extension. To deploy to GH pages:
+
+```rb
+bundle exec rake build    # Compile static files into build directory
+bundle exec rake publish  # Build + publish to `gh-pages` branch
 ```
-
-should force heroku to run the ruby app and compile the middleman static site. Hopefully [joeycody.herokuapp.com](https://joeycody.herokuapp.com) isn't too broken.
 
 ### Renewing SSL-Cert
 

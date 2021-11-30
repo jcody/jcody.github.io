@@ -1,3 +1,8 @@
+require "middleman-gh-pages"
+
+# Ignore errors about dirty `middleman-gh-pages` builds
+ENV["ALLOW_DIRTY"] = "true"
+
 namespace :posts do
   desc "Create a new blog post"
   task :new, :title do |t, args|
