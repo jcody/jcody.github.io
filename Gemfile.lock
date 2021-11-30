@@ -84,7 +84,7 @@ GEM
       servolux
       tilt (~> 2.0.9)
       uglifier (~> 3.0)
-    middleman-deploy (1.0.0)
+    middleman-deploy (2.0.0.pre.alpha)
       middleman-core (>= 3.2)
       net-sftp
       ptools
@@ -153,7 +153,7 @@ DEPENDENCIES
   geokit (~> 1.10.0)
   middleman (~> 4.3)
   middleman-blog (~> 4.0.0)
-  middleman-deploy
+  middleman-deploy (~> 2.0.0.pre.alpha)
   middleman-favicon-maker (~> 4.0)
   middleman-livereload (~> 3.4.6)
   middleman-syntax (~> 2.1.0)
