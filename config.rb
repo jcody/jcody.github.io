@@ -38,7 +38,7 @@ activate :directory_indexes
 page "/blog-index.html", layout: "ghost_layout"
 
 # Set build and assets directories
-set :build_dir, "tmp"
+set :build_dir, "build"
 set :css_dir, "assets/stylesheets"
 set :js_dir, "assets/javascripts"
 set :images_dir, "assets/images"

@@ -7,7 +7,7 @@ To create local copy:
 ```shell
 bundle exec middleman build
 ```
-Static site should have been generated in the `/tmp` directory. Preview with `open tmp/index.html`.
+Static site should have been generated in the `/build` directory. Preview with `open build/index.html`.
 
 ### Deployment
 
