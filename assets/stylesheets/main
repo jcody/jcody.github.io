@@ -1,0 +1,178 @@
+.homepage {
+  background-color: #fbfbfb; }
+
+body {
+  padding-top: 50px;
+  font-family: "lft-etica", sans-serif; }
+  body p {
+    font-size: 12px; }
+  body h1 {
+    color: #fff;
+    font-size: 60px;
+    font-family: "lft-etica", sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
+  body h2 {
+    color: #3d4651;
+    position: relative;
+    font-size: 38px;
+    font-family: "lft-etica", sans-serif;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #e1e1e1; }
+  body h3 {
+    color: #3d4651;
+    font-family: "lft-etica", sans-serif;
+    font-weight: bold;
+    line-height: 1.3; }
+  body h3.intro-text {
+    font-family: 'lft-etica', sans-serif;
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 0px; }
+    body h3.intro-text.current {
+      padding-top: 30px; }
+  body h3.small-projects {
+    font-size: 20px; }
+  body a {
+    text-decoration: none;
+    color: #f1654c; }
+    body a:hover {
+      text-decoration: none;
+      color: #f8a99b; }
+  body ul {
+    list-style: none; }
+  body dt {
+    float: left;
+    width: 90px;
+    margin-right: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #acb2bb; }
+  body i.logo {
+    font-weight: bold; }
+  body .highlight {
+    color: #f1654c; }
+
+div.intro {
+  background-color: #f1654c;
+  padding: 20px; }
+  div.intro h1 {
+    text-align: center; }
+  div.intro h2 {
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-text-stroke: 1px white; }
+  div.intro .want .more {
+    color: #fff;
+    background: #f1654c;
+    padding: 5px 15px;
+    border: #fff 2px solid;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all ease 0.2s;
+    font-size: 2.0rem; }
+    div.intro .want .more:hover {
+      background: #fff;
+      color: #f1654c; }
+
+div.main {
+  padding: 60px 0; }
+  div.main h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px; }
+  div.main div.project {
+    background: #FEFEFE;
+    border: 1px solid #EAEAEA;
+    padding: 15px;
+    border-radius: 2px;
+    transition: all 0.2s cubic-bezier(0.52, 0.01, 0.53, 1); }
+    div.main div.project:hover {
+      border: 1px solid #e0e0e0; }
+    div.main div.project img {
+      width: 100%; }
+    div.main div.project p.description {
+      margin: 10px 3px; }
+    div.main div.project div.details {
+      font-size: 12px; }
+
+div.sub-call {
+  background: #FEFEFE;
+  margin-top: 100px;
+  border-top: 1px solid #EAEAEA;
+  border-bottom: 1px solid #EAEAEA; }
+  div.sub-call h1 {
+    color: #333; }
+  div.sub-call h2 {
+    font-size: 28px;
+    font-weight: bold; }
+  div.sub-call .internet {
+    text-align: center; }
+    div.sub-call .internet h3 {
+      font-size: 18px;
+      margin-bottom: 20px; }
+    div.sub-call .internet div.col-xs-3 {
+      text-align: center; }
+    div.sub-call .internet a {
+      transition: all 0.1s ease-out;
+      color: #3d4651; }
+      div.sub-call .internet a i {
+        display: block; }
+      div.sub-call .internet a span {
+        transition: opacity 0.1s ease-out;
+        font-size: 11px;
+        opacity: 0; }
+      div.sub-call .internet a:hover {
+        color: #f1654c;
+        margin-top: 20px; }
+        div.sub-call .internet a:hover span {
+          opacity: 1; }
+
+@keyframes anim-blink {
+  0% {
+    opacity: 0.0; }
+  22% {
+    opacity: 0.0; }
+  25% {
+    opacity: 1.0; }
+  75% {
+    opacity: 1.0; }
+  78% {
+    opacity: 0.0; }
+  100% {
+    opacity: 0.0; } }
+
+@-webkit-keyframes anim-blink {
+  0% {
+    opacity: 0.0; }
+  22% {
+    opacity: 0.0; }
+  25% {
+    opacity: 1.0; }
+  75% {
+    opacity: 1.0; }
+  78% {
+    opacity: 0.0; }
+  100% {
+    opacity: 0.0; } }
+
+@-moz-keyframes blinker {
+  0% {
+    opacity: 0.0; }
+  22% {
+    opacity: 0.0; }
+  25% {
+    opacity: 1.0; }
+  75% {
+    opacity: 1.0; }
+  78% {
+    opacity: 0.0; }
+  100% {
+    opacity: 0.0; } }
+
+.blinker {
+  animation: anim-blink 1.5s infinite linear;
+  -webkit-animation: anim-blink 1.5s infinite linear;
+  position: relative; }

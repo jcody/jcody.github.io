@@ -1,0 +1,28 @@
+header.navbar {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+  background-color: #3d4651;
+  min-height: 50px;
+  border: none;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  color: #fff; }
+  header.navbar .jc {
+    top: -2px;
+    position: relative;
+    padding-left: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 1; }
+  header.navbar nav {
+    padding: 10px 0px; }
+    header.navbar nav a {
+      color: #fff; }
+      header.navbar nav a:hover {
+        color: #f1654c;
+        text-shadow: none; }
+    header.navbar nav ul {
+      font-family: 'lft-etica', sans-serif;
+      padding-top: 5px; }
+      header.navbar nav ul li {
+        float: left;
+        margin: 0 10px; }
