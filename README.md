@@ -29,3 +29,7 @@ sudo certbot renew
 # If that doesn't work, use the interactive mode.
 sudo certbot certonly --manual -d joeycody.com
 ```
+
+##### Feeling Dumb?
+
+- [Publishing to GH Pages via Jekyll (github.com)](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
