@@ -1,17 +1,15 @@
 <header class="navbar navbar-fixed-top">
   <div class="container">
     <nav role="navigation">
-
-      <% link_to '/', :class => 'home' do  %>
+      <% link_to '/', class: 'home' do  %>
         <i class="fa fa-2x fa-code logo"></i>
         <span class='jc'>JOEY CODY</span>
       <% end %>
 
       <ul class="navbar-right">
+        <li><%= link_to 'Work', '/resume' %></li>
         <li><%= link_to 'Contact', '/contact' %></li>
-        <li><%= link_to 'Resume', '/resume' %></li>
       </ul>
-
     </nav>
   </div>
 </header>

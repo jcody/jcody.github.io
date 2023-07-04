@@ -92,10 +92,12 @@ div.intro {
   }
 
     .want {
+      padding: 5px 15px;
+
       .more {
+        padding: 5px 15px;
         color: #fff;
         background: #f1654c;
-        padding: 5px 15px;
         border: #fff 2px solid;
         text-decoration: none;
         border-radius: 5px;
@@ -198,7 +200,6 @@ div.sub-call {
     }
   }
 }
-
 
 @keyframes anim-blink {
   0% { opacity: 0.0; }
