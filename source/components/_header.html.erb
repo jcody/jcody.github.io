@@ -1,14 +1,14 @@
-<header class="navbar navbar-fixed-top">
+<header class="navbar navbar-expand-md navbar-fixed-top">
   <div class="container">
     <nav role="navigation">
-      <% link_to '/', class: 'home' do  %>
+      <% link_to '/', class: 'navbar-brand' do  %>
         <i class="fa fa-2x fa-code logo"></i>
         <span class='jc'>JOEY CODY</span>
       <% end %>
 
-      <ul class="navbar-right">
-        <li><%= link_to 'Work', '/resume' %></li>
-        <li><%= link_to 'Contact', '/contact' %></li>
+      <ul class="navbar-right nav nav-pills">
+        <li class="nav-item"><%= link_to 'Work', '/resume' %></li>
+        <li class="nav-item"><%= link_to 'Contact', '/contact' %></li>
       </ul>
     </nav>
   </div>

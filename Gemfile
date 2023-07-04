@@ -7,6 +7,7 @@ gem 'middleman-blog', '~> 4.0.0'
 gem 'middleman-livereload', '~> 3.4.6'
 gem 'middleman-favicon-maker', '~> 4.0'
 gem 'middleman-gh-pages'
+gem 'middleman-sprockets'
 
 # Heroku server config
 gem 'rack-contrib'
@@ -14,7 +15,9 @@ gem 'rack-ssl'
 gem 'puma'
 
 # Styles
-gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc'
+gem 'bootstrap', '~> 5.3.0.alpha3', require: "bootstrap"
+gem 'middleman-autoprefixer'
 
 # Code highlighting
 gem 'middleman-syntax', '~> 2.1.0'
