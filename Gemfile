@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
-ruby '2.7.1'
 
 # Middleman gems
-gem 'middleman', '~> 4.3'
+gem 'middleman', '~> 4.5'
+gem 'haml', '~> 5.1' # Try downgrading to a compatible version
+
 gem 'middleman-blog', '~> 4.0.0'
 gem 'middleman-livereload', '~> 3.4.6'
 gem 'middleman-favicon-maker', '~> 4.0'
@@ -12,6 +13,7 @@ gem 'middleman-gh-pages'
 gem 'rack-contrib'
 gem 'rack-ssl'
 gem 'puma'
+gem 'webrick'
 
 # Styles
 gem 'bootstrap-sass', '~> 3.4.1'
