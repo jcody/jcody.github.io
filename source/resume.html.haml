@@ -1,74 +1,77 @@
 ---
-title: Work <> Joey Cody
-
+title: Work | Joey Cody
+description: Work for Joey Cody, founding engineer at Substrate AI in San Francisco.
 current_city: San Francisco, CA
 lat: 37.788337
 lon: -122.407316
 ---
-.intro
+.page-intro
   .container
+    %p.eyebrow Resume
     %h1 Work
+    %p.page-intro__lede
+      Based in #{current_page.data.current_city}. Founding engineer at
+      = link_to "Substrate AI", "https://www.substrateai.com/"
+      building AI agents for BPO, starting with healthcare RCM.
 
-.resume
-  -# .section.summary
-  -#   %p.label Software Engineer @ AnyPerk
-  -#   %p
-  -#   %p I develop web and mobile applications. Some of those apps include Honolulu Answers, SexInfo Online and CabSG. Languages I like to talk dirty in are Ruby/Rails, Javascript, SQL/Postgres and PHP.
+.resume-page
+  .section.summary
+    %p
+      Experience across product, scaling platforms, AI, and building engineering teams.
 
   .section
     %h2 Work Experience
 
     %ul.section-items
       %li.section-item
+        %a.link{ href: "https://www.substrateai.com/" }
+          %h3 Substrate AI
+          %i.fa.fa-external-link{"aria-hidden" => "true"}
+        %div.secondary
+          %span Founding Engineer
+          %span.separator= "|"
+          %span Jul 2025 - Present
+        %p Building AI agents for BPO, starting with healthcare revenue cycle management.
+
+      %li.section-item
         %a.link{ href: "https://www.fountain.com" }
           %h3 Fountain
-          %i.fa.fa-external-link
+          %i.fa.fa-external-link{"aria-hidden" => "true"}
         %div.secondary
           %span Senior Engineering Manager
           %span.separator= "|"
-          %span Nov, 2018 - Present
-          %p Engineering manager for Fountain's Internal + External Integrations and Applicant Sourcing teams.
+          %span Nov 2018 - Jul 2025
+        %p Led Internal and External Integrations plus Applicant Sourcing teams.
 
       %li.section-item
         %a.link{ href: "https://www.fond.co" }
           %h3 Fond
-          %i.fa.fa-external-link
+          %i.fa.fa-external-link{"aria-hidden" => "true"}
         %div.secondary
           %span Senior Software Engineer
           %span.separator= "|"
-          %span Mar, 2016 - Nov, 2018
-          %p Architected authentication service that generates and validates tokens used across all clients for every authenticated API request. Currently hitting ~7ms response times for validating tokens, and ~25ms for generating new user/client tokens.
-          %p Also worked on improving CI tools, breaking out other small services and interviewed 40+ candidates.
+          %span Mar 2016 - Nov 2018
+        %p Built authentication services, improved CI tooling, and supported platform work across the stack.
 
       %li.section-item
         %a.link{ href: "https://www.hoteltonight.com" }
           %h3 HotelTonight
-          %i.fa.fa-external-link
+          %i.fa.fa-external-link{"aria-hidden" => "true"}
         %div.secondary
           %span Platform Engineer
           %span.separator= "|"
-          %span Feb, 2014 – Dec, 2015
-          %p Developer focused on architecting API’s for mobile developers to consume. Built promotional CRM platforms, hotel-facing inventory management systems and our ranking algorithm. Led charges to cut response times 50%+ and our CI build times drastically.
+          %span Feb 2014 - Dec 2015
+        %p Worked on APIs, platform systems, hotel tooling, and marketplace infrastructure.
 
       %li.section-item
         %a.link{ href: "https://www.codeforamerica.org" }
           %h3 Code for America
-          %i.fa.fa-external-link
+          %i.fa.fa-external-link{"aria-hidden" => "true"}
         %div.secondary
           %span Google Summer of Code Engineer
           %span.separator= "|"
           %span 2012 - 2014
-          %p= "Rails developer at Code for America. Helped create #{link_to "Honolulu Answers", "https://github.com/codeforamerica/honolulu_answers"} and #{link_to "Textizen", "https://www.textizen.com/"}."
-
-
-      %li.section-item
-        %a.link
-          %h3 CollisionBuzz
-        %div.secondary
-          %span PHP Developer
-          %span.separator= "|"
-          %span 2010
-          %p Designed and developed Facebook applications for auto body shops using PHP + FBJS.
+        %p= "Rails developer at Code for America. Created #{link_to "Honolulu Answers", "https://github.com/codeforamerica/honolulu_answers"} and #{link_to "Textizen", "https://www.textizen.com/"}."
 
   .section
     %h2 Education
@@ -76,15 +79,8 @@ lon: -122.407316
       %li.section-item
         %h3 University of California, Santa Barbara
         %div.secondary
-          %span B.A. Statistical Science
-          %span.separator= "|"
-          %span 2009 – 2013
+          %span Statistical Science
       %li.section-item
         %h3 National University of Singapore
         %div.secondary
           %span Computer Science - Computational Economics Emphasis
-          %span.separator= "|"
-          %span 2011 - 2012
-
-
-

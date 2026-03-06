@@ -1,1 +1,0 @@
-ga('require', 'Clearbit', {"mapping":{"companyName":"dimension1","companyEmployeesRange":"dimension2","companyTags":"dimension3","companyTech":"dimension4","companySubIndustry":"dimension5","companyIndustry":"dimension6","companyIndustryGroup":"dimension7","companySector":"dimension8","companyType":"dimension9","companyDomain":"dimension10"}});

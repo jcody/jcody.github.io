@@ -1,32 +1,39 @@
 ---
-title: Contact <> Joey Cody
-
+title: Contact | Joey Cody
+description: Contact Joey Cody in San Francisco.
 current_city: San Francisco, CA
 lat: 37.788337
 lon: -122.407316
 ---
-<div class="intro">
-  <div class="container contact">
-    <h1>HMU 🗣</h2>
+<section class="page-intro">
+  <div class="container">
+    <p class="eyebrow">Sup widdit</p>
+    <h1>Contact</h1>
+    <p class="page-intro__lede">
+      Based in <%= current_page.data.current_city %>. Email is the best path.
+    </p>
   </div>
-</div>
+</section>
 
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-md-4 col-md-offset-4" style="padding-top:100px;">
-      <dl>
+<section class="page-shell">
+  <div class="panel contact-panel">
+    <dl class="contact-list" aria-label="Contact links">
+      <div class="contact-row">
         <dt>Email</dt>
-        <dd><%= mail_to 'hey@joeycody.com', "hey@joeycody.com" %></dd>
-
+        <dd><%= mail_to 'joeydcody+hey@gmail.com', "joeydcody@gmail.com" %></dd>
+      </div>
+      <div class="contact-row">
         <dt>GitHub</dt>
-        <dd><%= link_to "jcody", 'https://github.com/jcody' %></dd>
-
-        <dt>LinkedIn</dt>
-        <dd><%= link_to "Joey Cody", 'https://www.linkedin.com/in/joeycody' %></dd>
-
+        <dd><%= link_to "github.com/jcody", 'https://github.com/jcody' %></dd>
+      </div>
+      <div class="contact-row">
         <dt>Twitter</dt>
         <dd><%= link_to "@joeycdy", 'https://twitter.com/joeycdy' %></dd>
-      </dl>
+      </div>
+      <div class="contact-row">
+        <dt>LinkedIn</dt>
+        <dd><%= link_to "linkedin.com/in/joeycody", 'https://www.linkedin.com/in/joeycody' %></dd>
+      </div>
+    </dl>
     </div>
-  </div>
-</div>
+</section>

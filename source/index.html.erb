@@ -1,40 +1,36 @@
 ---
 title: Joey Cody
-
+description: Founding engineer at Substrate AI in San Francisco building practical AI agents for healthcare revenue cycle management.
 current_city: San Francisco, CA
 lat: 37.788337
 lon: -122.407316
 ---
-<div class="homepage">
-  <div class="intro">
-    <div class="container">
-      <h1>👋 Hello...<span class="blinker">|</span></h1>
-      <h2>I'm an Engineering Manager in <%= current_page.data.current_city %></h2>
-      <br>
-      <p></p>
-      <br>
-      <div class="row">
-        <div class="want col-sm-2 col-sm-offset-4 col-xs-offset-3 col-xs-3">
-          <%= link_to 'Work', "/resume", class: 'more' %>
-        </div>
-        <div class="want col-sm-2 col-xs-3">
-          <%= link_to 'Contact', "/contact/", class: "more" %>
-        </div>
-      </div>
-      <br>
-      <br>
-    </div>
-  </div>
+<section class="page-intro">
+  <div class="container">
+    <p class="eyebrow"><%= current_page.data.current_city %></p>
+    <h1>Joey Cody</h1>
+    <p class="page-intro__lede">
+      Founding engineer at <%= link_to 'Substrate AI', 'https://www.substrateai.com/', class: 'text-link' %>.
+      Building AI agents for BPO, starting with healthcare RCM.
+      Previously Fountain, Fond, and HotelTonight.
+    </p>
 
-  <div class="sub-call">
-    <div class="container">
-    <br>
-      <div class="row">
-        <div class="col-sm-12">
-          <h4 class="intro-text current text-center">Currently I hack on Ruby apps at <%= link_to '⛲ Fountain. ⛲', 'https://www.fountain.com', class: 'highlight' %></h4>
-        </div>
-      </div>
-      <br />
+    <div class="button-row">
+      <%= link_to 'Resume', '/resume/', class: 'button' %>
+      <%= link_to 'Contact', '/contact/', class: 'button button--secondary' %>
     </div>
   </div>
-</div>
+</section>
+
+<section class="page-shell stack">
+  <article class="panel simple-card">
+    <p class="eyebrow">Current</p>
+    <h2>Substrate AI</h2>
+    <p>Founding engineer since July 2025.</p>
+  </article>
+
+  <article class="panel simple-card">
+    <p class="eyebrow">Focus</p>
+    <p>AI agents, platforms & integrations, and building product teams.</p>
+  </article>
+</section>

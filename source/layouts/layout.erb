@@ -2,33 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Software Engineer in foggy San Francisco, CA. All things Ruby, Golang, API's and tequila. Especially tequila.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="<%= current_page.data.description || config.meta[:blog][:description] %>">
     <meta name="author" content="Joey Cody">
     <meta name="google-site-verification" content="LVlVLY6LY-WbXw8StiJxTNiX8G76j1YAmXw42VAbDsE" />
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@joeycdy" />
+    <meta name="twitter:title" content="<%= current_page.data.title || 'Joey Cody' %>" />
+    <meta name="twitter:description" content="<%= current_page.data.description || config.meta[:blog][:description] %>" />
     <meta property="og:url" content="<%= URI.join(blog_settings.url, current_page.url) %>" />
     <meta property="og:title" content="<%= current_page.data.title %>" />
+    <meta property="og:description" content="<%= current_page.data.description || config.meta[:blog][:description] %>" />
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Joey Cody" %></title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5QT7SJXE17"></script>
     <%= javascript_include_tag "vendor/google_analytics" %>
-    <%= javascript_include_tag "vendor/clearbit" %>
-    <script async src="https://ga.clearbit.com/v1/ga.js?authorization=pk_63a6c53dd00033e091a8242d2448e468"></script>
     <script src="https://use.typekit.net/shz2qoo.js"></script>
 
     <%= javascript_include_tag  "base" %>
     <%= stylesheet_link_tag "base" %>
   </head>
 
-  <body>
-
+  <body class="<%= page_classes %>">
     <%= partial "components/header" %>
-    <%= yield %>
+    <main class="site-main">
+      <%= yield %>
+    </main>
     <%= partial "components/footer" %>
-
   </body>
 </html>

@@ -1,14 +1,18 @@
-<header class="navbar navbar-fixed-top">
-  <div class="container">
-    <nav role="navigation">
-      <% link_to '/', class: 'home' do  %>
-        <i class="fa fa-2x fa-code logo"></i>
-        <span class='jc'>JOEY CODY</span>
-      <% end %>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <% link_to '/', class: 'site-brand', 'aria-label': 'Joey Cody home' do %>
+      <span class="site-brand__mark">JC</span>
+      <span class="site-brand__text">Joey Cody</span>
+    <% end %>
 
-      <ul class="navbar-right">
-        <li><%= link_to 'Work', '/resume/' %></li>
-        <li><%= link_to 'Contact', '/contact/' %></li>
+    <nav class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <% [{ label: 'Work', href: '/resume/' }, { label: 'Contact', href: '/contact/' }].each do |item| %>
+          <% active = current_page.url == item[:href] %>
+          <li>
+            <%= link_to item[:label], item[:href], class: active ? 'is-active' : nil, 'aria-current': (active ? 'page' : nil) %>
+          </li>
+        <% end %>
       </ul>
     </nav>
   </div>
