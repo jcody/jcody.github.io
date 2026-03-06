@@ -1,5 +1,17 @@
 source 'https://rubygems.org'
 
+# Required since Ruby 3.4+ / 4.0 (removed from default gems)
+gem 'base64'
+gem 'benchmark'
+gem 'bigdecimal'
+gem 'cgi'
+gem 'csv'
+gem 'drb'
+gem 'logger'
+gem 'mutex_m'
+gem 'ostruct'
+gem 'rdoc'
+
 # Middleman gems
 gem 'middleman', '~> 4.5'
 gem 'haml', '~> 5.1' # Try downgrading to a compatible version

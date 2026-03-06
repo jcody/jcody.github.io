@@ -1,4 +1,5 @@
 require "helpers"
+require "favicon_maker_patch"
 
 activate :blog do |blog|
   blog.sources = "posts/{year}-{month}-{day}-{title}.html"
@@ -45,7 +46,7 @@ set :images_dir, "assets/images"
 
 # Middleman-Syntax - https://github.com/middleman/middleman-syntax
 activate :syntax, line_numbers: false
-set :haml, { ugly: true }
+set :haml, {}
 set :markdown_engine, :redcarpet
 set :markdown,
   fenced_code_blocks: true,
