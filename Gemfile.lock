@@ -107,14 +107,14 @@ GEM
     middleman-syntax (2.1.0)
       middleman-core (>= 3.2)
       rouge (~> 1.0)
-    mini_portile2 (2.8.1)
+    mini_portile2 (2.8.9)
     minitest (6.0.2)
       drb (~> 2.0)
       prism (~> 1.5)
     mutex_m (0.3.0)
     nio4r (2.7.5)
-    nokogiri (1.14.3)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.19.1)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     ostruct (0.6.3)
     padrino-helpers (0.15.3)
@@ -131,7 +131,7 @@ GEM
     public_suffix (6.0.1)
     puma (7.2.0)
       nio4r (~> 2.0)
-    racc (1.6.2)
+    racc (1.8.1)
     rack (2.2.9)
     rack-contrib (2.2.0)
       rack (~> 2.0)
@@ -189,7 +189,7 @@ DEPENDENCIES
   middleman-livereload (~> 3.4.6)
   middleman-syntax (~> 2.1.0)
   mutex_m
-  nokogiri (~> 1.14.3)
+  nokogiri (~> 1.19.1)
   ostruct
   puma
   rack-contrib
