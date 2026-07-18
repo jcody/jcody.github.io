@@ -21,14 +21,6 @@ gem 'middleman-livereload', '~> 3.5.0'
 gem 'middleman-favicon-maker', '~> 4.0'
 gem 'middleman-gh-pages'
 
-# Heroku server config
-gem 'rack', '~> 3.1'
-gem 'rackup'
-gem 'rack-contrib', '~> 2.5.0'
-gem 'rack-ssl'
-gem 'puma'
-gem 'webrick', '~> 1.9.2'
-
 # Styles
 gem 'bootstrap-sass', '~> 3.4.1'
 

@@ -122,7 +122,6 @@ GEM
       drb (~> 2.0)
       prism (~> 1.5)
     mutex_m (0.3.0)
-    nio4r (2.7.5)
     nokogiri (1.19.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
@@ -139,16 +138,10 @@ GEM
       date
       stringio
     public_suffix (7.0.5)
-    puma (7.2.1)
-      nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.1.21)
-    rack-contrib (2.5.0)
-      rack (< 4)
     rack-livereload (0.6.1)
       rack (>= 3.0, < 3.2)
-    rack-ssl (1.4.1)
-      rack
     rackup (2.3.1)
       rack (>= 3)
     rake (13.4.2)
@@ -202,16 +195,10 @@ DEPENDENCIES
   mutex_m
   nokogiri (~> 1.19.4)
   ostruct
-  puma
-  rack (~> 3.1)
-  rack-contrib (~> 2.5.0)
-  rack-ssl
-  rackup
   rake (~> 13.4)
   rdoc
   redcarpet (~> 3.6)
   rexml (~> 3.4.4)
-  webrick (~> 1.9.2)
 
 BUNDLED WITH
    2.5.11
