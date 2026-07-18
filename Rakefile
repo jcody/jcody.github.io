@@ -8,6 +8,24 @@ load File.join(
   "gh-pages.rake"
 )
 
+# middleman-gh-pages 0.4.1 calls Rake's legacy `mv` wrapper, which is not
+# compatible with modern Ruby's keyword arguments. Keep the gem's behavior
+# while calling FileUtils directly and always restoring the Pages checkout.
+def backup_and_restore(dir, file)
+  return yield unless File.exist?(File.join(dir, file))
+
+  Dir.mktmpdir do |tmpdir|
+    source = File.join(dir, file)
+    backup = File.join(tmpdir, file)
+    FileUtils.mv(source, backup)
+    begin
+      yield
+    ensure
+      FileUtils.mv(backup, source) if File.exist?(backup)
+    end
+  end
+end
+
 # Ignore errors about dirty `middleman-gh-pages` builds
 ENV["ALLOW_DIRTY"] = "true"
 
@@ -37,6 +55,35 @@ task :sync_build_dir => :prepare_build_dir do
     end
 
     abort "git reset failed" unless system("git", "reset", "--hard", remote_branch)
+  end
+end
+
+Rake::Task["build"].clear
+desc "Compile all files into the build directory"
+task :build do
+  backup_and_restore(BUILD_DIR, ".git") do
+    Dir.chdir(PROJECT_ROOT) do
+      built = Bundler.with_unbundled_env do
+        system("bundle", "exec", "middleman", "build", "--clean")
+      end
+      abort "Middleman build failed" unless built
+    end
+  end
+end
+
+Rake::Task["publish"].clear
+desc "Build and publish to Github Pages"
+task :publish => [:prevent_dirty_builds, :sync_build_dir, :build] do
+  suffix = ENV["COMMIT_MESSAGE_SUFFIX"]
+  head = Dir.chdir(PROJECT_ROOT) { `git log --pretty="%h" -n1`.chomp }
+  message = ["Site updated to #{head}", suffix].compact.join("\n\n")
+
+  Dir.chdir(BUILD_DIR) do
+    abort "git add failed" unless system("git", "add", "--all")
+    unless `git status --porcelain`.chomp.empty?
+      abort "git commit failed" unless system("git", "commit", "-m", message)
+    end
+    abort "git push failed" unless system("git", "push", publish_remote_name, publish_branch_name)
   end
 end
 
