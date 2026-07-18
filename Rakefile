@@ -8,24 +8,6 @@ load File.join(
   "gh-pages.rake"
 )
 
-# middleman-gh-pages 0.4.1 calls Rake's legacy `mv` wrapper, which is not
-# compatible with modern Ruby's keyword arguments. Keep the gem's behavior
-# while calling FileUtils directly and always restoring the Pages checkout.
-def backup_and_restore(dir, file)
-  return yield unless File.exist?(File.join(dir, file))
-
-  Dir.mktmpdir do |tmpdir|
-    source = File.join(dir, file)
-    backup = File.join(tmpdir, file)
-    FileUtils.mv(source, backup)
-    begin
-      yield
-    ensure
-      FileUtils.mv(backup, source) if File.exist?(backup)
-    end
-  end
-end
-
 # Ignore errors about dirty `middleman-gh-pages` builds
 ENV["ALLOW_DIRTY"] = "true"
 

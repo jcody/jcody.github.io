@@ -16,7 +16,7 @@ gem 'rdoc'
 gem 'middleman', '~> 4.6'
 gem 'haml', '~> 5.1'
 
-gem 'middleman-blog', '~> 4.0.0'
+gem 'middleman-blog', '~> 4.2'
 gem 'middleman-livereload', '~> 3.5.0'
 gem 'middleman-favicon-maker', '~> 4.0'
 gem 'middleman-gh-pages'
@@ -33,8 +33,8 @@ gem 'webrick', '~> 1.9.2'
 gem 'bootstrap-sass', '~> 3.4.1'
 
 # Code highlighting
-gem 'middleman-syntax', '~> 2.1.0'
-gem 'redcarpet', '~> 3.5.1'
+gem 'middleman-syntax', '~> 3.6'
+gem 'redcarpet', '~> 3.6'
 
 # For "summary"-Helper
 gem 'nokogiri', '~> 1.19.4'
@@ -42,6 +42,5 @@ gem 'nokogiri', '~> 1.19.4'
 # XML parsing (transitive dep, pinned for CVE patching)
 gem 'rexml', '~> 3.4.4'
 
-# Extras
-gem 'geokit', '~> 1.10.0'
-gem 'rake', '12.3.3'
+# Build tooling
+gem 'rake', '~> 13.4'

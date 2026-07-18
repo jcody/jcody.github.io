@@ -1,4 +1,3 @@
-require "helpers"
 require "favicon_maker_patch"
 
 activate :blog do |blog|

@@ -2,37 +2,25 @@
 Personal site built with [Middleman](https://middlemanapp.com).
 
 ### Development
-To create local copy:
+
+Install the Ruby version in `.ruby-version`, then install the Ruby and Node dependencies:
 
 ```shell
-npm install
+rbenv install
+bundle install
+npm ci
 npm run build
 ```
-Static site should have been generated in the `/build` directory. Preview with `open build/index.html`.
 
-Run `npm run css:watch` alongside `bundle exec middleman server` while editing the site.
+The static site is generated in `/build`.
+
+For local development, run `npm run css:watch` alongside `bundle exec middleman server`.
 
 ### Deployment
 
-Deployments leverage the [`middleman-gh-pages`](https://github.com/edgecase/middleman-gh-pages) extension. To deploy to GH pages:
+Deployments use the [`middleman-gh-pages`](https://github.com/edgecase/middleman-gh-pages) extension and publish the generated site to `gh-pages`:
 
 ```rb
 bundle exec rake build    # Compile static files into build directory
 bundle exec rake publish  # Build + publish to `gh-pages` branch
 ```
-
-### Renewing SSL-Cert
-
-Currently using a free SSL certificate from [Let's Encrypt](https://letsencrypt.org/). The certificate is valid for 90-days by default, and thus must be renewed to remain valid. The [Certbot](https://certbot.eff.org/) homebrew package makes that easy:
-
-```shell
-# Try to renew all certificates in non-interactive mode.
-sudo certbot renew
-
-# If that doesn't work, use the interactive mode.
-sudo certbot certonly --manual -d joeycody.com
-```
-
-##### Feeling Dumb?
-
-- [Publishing to GH Pages via Jekyll (github.com)](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll)
