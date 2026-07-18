@@ -1,1 +1,1 @@
-try{Typekit.load({async:!0})}catch(a){}
+try{Typekit.load({async:!0})}catch(e){}
