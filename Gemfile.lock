@@ -118,7 +118,7 @@ GEM
     minitest (5.27.0)
     mutex_m (0.3.0)
     nio4r (2.7.5)
-    nokogiri (1.19.3)
+    nokogiri (1.19.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     ostruct (0.6.3)
@@ -194,7 +194,7 @@ DEPENDENCIES
   middleman-livereload (~> 3.5.0)
   middleman-syntax (~> 2.1.0)
   mutex_m
-  nokogiri (~> 1.19.3)
+  nokogiri (~> 1.19.4)
   ostruct
   puma
   rack (~> 3.1)
