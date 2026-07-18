@@ -5,32 +5,34 @@ current_city: San Francisco, CA
 lat: 37.788337
 lon: -122.407316
 ---
-<section class="page-intro">
-  <div class="container">
-    <p class="eyebrow"><%= current_page.data.current_city %></p>
-    <h1>Joey Cody</h1>
-    <p class="page-intro__lede">
-      Founding engineer at <%= link_to 'Substrate AI', 'https://www.substrateai.com/', class: 'text-link' %>.
+<div class="mx-auto max-w-2xl px-5 pt-12 pb-8 sm:pt-16 sm:pb-10">
+  <header>
+    <h1 class="text-3xl font-semibold text-zinc-950">Joey Cody</h1>
+    <p class="mt-6 max-w-xl text-lg leading-8 text-zinc-700">
+      Founding engineer at <%= link_to 'Substrate AI', 'https://www.substrateai.com/' %>.
       Building AI agents for BPO, starting with healthcare RCM.
-      Previously Fountain, Fond, and HotelTonight.
+      Previously <%= link_to 'Fountain', 'https://www.fountain.com/' %>,
+      <%= link_to 'HotelTonight', 'https://www.hoteltonight.com/' %> (acq Airbnb), and
+      <%= link_to 'Code for America', 'https://codeforamerica.org/' %>.
     </p>
 
-    <div class="button-row">
-      <%= link_to 'Resume', '/resume/', class: 'button' %>
-      <%= link_to 'Contact', '/contact/', class: 'button button--secondary' %>
+    <p class="mt-6 flex justify-center gap-5 text-sm">
+      <%= link_to 'Resume', '/resume/' %>
+      <%= link_to 'Contact', '/contact/' %>
+    </p>
+  </header>
+
+  <dl class="mt-12 border-t border-zinc-200 text-base">
+    <div class="grid gap-1 border-b border-zinc-200 py-5 sm:grid-cols-[7rem_1fr] sm:gap-4">
+      <dt class="text-sm text-zinc-500">Current</dt>
+      <dd class="m-0 text-zinc-700">
+        <span class="font-medium text-zinc-950">Substrate AI</span><br>
+        Founding engineer since July 2025.
+      </dd>
     </div>
-  </div>
-</section>
-
-<section class="page-shell stack">
-  <article class="panel simple-card">
-    <p class="eyebrow">Current</p>
-    <h2>Substrate AI</h2>
-    <p>Founding engineer since July 2025.</p>
-  </article>
-
-  <article class="panel simple-card">
-    <p class="eyebrow">Focus</p>
-    <p>AI agents, platforms & integrations, and building product teams.</p>
-  </article>
-</section>
+    <div class="grid gap-1 border-b border-zinc-200 py-5 sm:grid-cols-[7rem_1fr] sm:gap-4">
+      <dt class="text-sm text-zinc-500">Focus</dt>
+      <dd class="m-0 text-zinc-700">AI agents, platforms &amp; integrations, and building product teams.</dd>
+    </div>
+  </dl>
+</div>

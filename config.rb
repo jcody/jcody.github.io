@@ -58,7 +58,9 @@ config[:sass_assets_paths] << Bootstrap.stylesheets_path
 
 # Build-specific configuration
 configure :build do
-  activate :minify_css
+  # Tailwind's output is already minified and uses modern color syntax that
+  # the legacy SassC compressor does not understand.
+  activate :minify_css, ignore: [/site\.css$/]
   activate :minify_javascript
   activate :relative_assets
 

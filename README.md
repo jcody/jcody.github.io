@@ -5,9 +5,12 @@ Personal site built with [Middleman](https://middlemanapp.com).
 To create local copy:
 
 ```shell
-bundle exec middleman build
+npm install
+npm run build
 ```
 Static site should have been generated in the `/build` directory. Preview with `open build/index.html`.
+
+Run `npm run css:watch` alongside `bundle exec middleman server` while editing the site.
 
 ### Deployment
 

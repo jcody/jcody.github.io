@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  a {
+    color: theme("colors.blue.700");
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  a:hover {
+    color: theme("colors.blue.900");
+  }
+
+  a:focus-visible {
+    border-radius: 2px;
+    outline: 2px solid theme("colors.blue.600");
+    outline-offset: 3px;
+  }
+}

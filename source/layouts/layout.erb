@@ -18,21 +18,14 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Joey Cody" %></title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
-
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5QT7SJXE17"></script>
     <%= javascript_include_tag "vendor/google_analytics" %>
-    <script src="https://use.typekit.net/shz2qoo.js"></script>
-
-    <%= javascript_include_tag  "base" %>
-    <%= stylesheet_link_tag "base" %>
+    <%= stylesheet_link_tag "site" %>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="min-h-screen bg-white font-sans text-zinc-900 antialiased <%= page_classes %>">
     <%= partial "components/header" %>
-    <main class="site-main">
+    <main>
       <%= yield %>
     </main>
     <%= partial "components/footer" %>

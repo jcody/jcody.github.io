@@ -1,16 +1,15 @@
-<header class="site-header">
-  <div class="container site-header__inner">
-    <% link_to '/', class: 'site-brand', 'aria-label': 'Joey Cody home' do %>
-      <span class="site-brand__mark">JC</span>
-      <span class="site-brand__text">Joey Cody</span>
+<header class="border-b border-zinc-200">
+  <div class="mx-auto flex max-w-2xl items-baseline justify-between px-5 py-5">
+    <% link_to '/', class: 'font-semibold text-zinc-950 no-underline hover:text-zinc-600', 'aria-label': 'Joey Cody home' do %>
+      <span>Joey Cody</span>
     <% end %>
 
-    <nav class="site-nav" aria-label="Primary">
-      <ul class="site-nav__list">
+    <nav aria-label="Primary">
+      <ul class="flex list-none gap-5 p-0 text-sm">
         <% [{ label: 'Work', href: '/resume/' }, { label: 'Contact', href: '/contact/' }].each do |item| %>
           <% active = current_page.url == item[:href] %>
           <li>
-            <%= link_to item[:label], item[:href], class: active ? 'is-active' : nil, 'aria-current': (active ? 'page' : nil) %>
+            <%= link_to item[:label], item[:href], class: active ? 'font-medium text-zinc-950 no-underline' : 'text-zinc-600 no-underline hover:text-zinc-950', 'aria-current': (active ? 'page' : nil) %>
           </li>
         <% end %>
       </ul>

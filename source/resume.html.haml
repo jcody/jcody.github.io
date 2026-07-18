@@ -5,82 +5,67 @@ current_city: San Francisco, CA
 lat: 37.788337
 lon: -122.407316
 ---
-.page-intro
-  .container
-    %p.eyebrow Resume
-    %h1 Work
-    %p.page-intro__lede
+%div{ class: "mx-auto max-w-2xl px-5 pt-12 pb-8 sm:pt-16 sm:pb-10" }
+  %header
+    %p.mb-2.text-sm.text-zinc-500 Resume
+    %h1.text-3xl.font-semibold.text-zinc-950 Work
+    %p.mt-4.text-zinc-700
       Based in #{current_page.data.current_city}. Founding engineer at
       = link_to "Substrate AI", "https://www.substrateai.com/"
       building AI agents for BPO, starting with healthcare RCM.
-
-.resume-page
-  .section.summary
-    %p
+    %p.mt-4.text-zinc-700
       Experience across product, scaling platforms, AI, and building engineering teams.
 
-  .section
-    %h2 Work Experience
+  %section.mt-12
+    %h2.text-sm.font-semibold.text-zinc-950 Work experience
 
-    %ul.section-items
-      %li.section-item
-        %a.link{ href: "https://www.substrateai.com/" }
-          %h3 Substrate AI
-          %i.fa.fa-external-link{"aria-hidden" => "true"}
-        %div.secondary
-          %span Founding Engineer
-          %span.separator= "|"
-          %span Jul 2025 - Present
-        %p Building AI agents for BPO, starting with healthcare revenue cycle management.
+    %ol.mt-4.list-none.border-b.border-zinc-200.p-0
+      %li.border-t.border-zinc-200.py-5
+        %div{ class: "flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6" }
+          %h3.font-medium.text-zinc-950
+            %a{ href: "https://www.substrateai.com/" } Substrate AI
+          %p.m-0.shrink-0.text-sm.text-zinc-500 Jul 2025 – Present
+        %p.mt-1.text-sm.text-zinc-600 Founding Engineer
+        %p.mt-3.mb-0.text-zinc-700 Building AI agents for BPO, starting with healthcare revenue cycle management.
 
-      %li.section-item
-        %a.link{ href: "https://www.fountain.com" }
-          %h3 Fountain
-          %i.fa.fa-external-link{"aria-hidden" => "true"}
-        %div.secondary
-          %span Senior Engineering Manager
-          %span.separator= "|"
-          %span Nov 2018 - Jul 2025
-        %p Led Internal and External Integrations plus Applicant Sourcing teams.
+      %li.border-t.border-zinc-200.py-5
+        %div{ class: "flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6" }
+          %h3.font-medium.text-zinc-950
+            %a{ href: "https://www.fountain.com" } Fountain
+          %p.m-0.shrink-0.text-sm.text-zinc-500 Nov 2018 – Jul 2025
+        %p.mt-1.text-sm.text-zinc-600 Director of Engineering
+        %p.mt-3.mb-0.text-zinc-700 Built and scaled engineering teams across core R&amp;D and 0→1 initiatives that expanded the company’s enterprise revenue. Partnered with Fortune 50 prospects and customers to launch complex SaaS deployments, integrations, and public APIs responsible for hundreds of thousands of hires annually.
 
-      %li.section-item
-        %a.link{ href: "https://www.fond.co" }
-          %h3 Fond
-          %i.fa.fa-external-link{"aria-hidden" => "true"}
-        %div.secondary
-          %span Senior Software Engineer
-          %span.separator= "|"
-          %span Mar 2016 - Nov 2018
-        %p Built authentication services, improved CI tooling, and supported platform work across the stack.
+      %li.border-t.border-zinc-200.py-5
+        %div{ class: "flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6" }
+          %h3.font-medium.text-zinc-950
+            %a{ href: "https://www.fond.co" } Fond
+          %p.m-0.shrink-0.text-sm.text-zinc-500 Mar 2016 – Nov 2018
+        %p.mt-1.text-sm.text-zinc-600 Senior Software Engineer
+        %p.mt-3.mb-0.text-zinc-700 Built authentication services, improved CI tooling, and supported platform work across the stack.
 
-      %li.section-item
-        %a.link{ href: "https://www.hoteltonight.com" }
-          %h3 HotelTonight
-          %i.fa.fa-external-link{"aria-hidden" => "true"}
-        %div.secondary
-          %span Platform Engineer
-          %span.separator= "|"
-          %span Feb 2014 - Dec 2015
-        %p Worked on APIs, platform systems, hotel tooling, and marketplace infrastructure.
+      %li.border-t.border-zinc-200.py-5
+        %div{ class: "flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6" }
+          %h3.font-medium.text-zinc-950
+            %a{ href: "https://www.hoteltonight.com" } HotelTonight (acq Airbnb)
+          %p.m-0.shrink-0.text-sm.text-zinc-500 Feb 2014 – Dec 2015
+        %p.mt-1.text-sm.text-zinc-600 Platform Engineer
+        %p.mt-3.mb-0.text-zinc-700 Worked on APIs, platform systems, hotel tooling, and marketplace infrastructure.
 
-      %li.section-item
-        %a.link{ href: "https://www.codeforamerica.org" }
-          %h3 Code for America
-          %i.fa.fa-external-link{"aria-hidden" => "true"}
-        %div.secondary
-          %span Google Summer of Code Engineer
-          %span.separator= "|"
-          %span 2012 - 2014
-        %p= "Rails developer at Code for America. Created #{link_to "Honolulu Answers", "https://github.com/codeforamerica/honolulu_answers"} and #{link_to "Textizen", "https://www.textizen.com/"}."
+      %li.border-t.border-zinc-200.py-5
+        %div{ class: "flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6" }
+          %h3.font-medium.text-zinc-950
+            %a{ href: "https://www.codeforamerica.org" } Code for America
+          %p.m-0.shrink-0.text-sm.text-zinc-500 2012 – 2014
+        %p.mt-1.text-sm.text-zinc-600 Google Summer of Code Engineer
+        %p.mt-3.mb-0.text-zinc-700= "Rails developer at Code for America. Created #{link_to "Honolulu Answers", "https://github.com/codeforamerica/honolulu_answers"} and #{link_to "Textizen", "https://www.textizen.com/"}."
 
-  .section
-    %h2 Education
-    %ul.section-items
-      %li.section-item
-        %h3 University of California, Santa Barbara
-        %div.secondary
-          %span Statistical Science
-      %li.section-item
-        %h3 National University of Singapore
-        %div.secondary
-          %span Computer Science - Computational Economics Emphasis
+  %section.mt-12
+    %h2.text-sm.font-semibold.text-zinc-950 Education
+    %ul.mt-4.list-none.border-b.border-zinc-200.p-0
+      %li.border-t.border-zinc-200.py-5
+        %h3.font-medium.text-zinc-950 University of California, Santa Barbara
+        %p.mt-1.mb-0.text-sm.text-zinc-600 Statistical Science
+      %li.border-t.border-zinc-200.py-5
+        %h3.font-medium.text-zinc-950 National University of Singapore
+        %p.mt-1.mb-0.text-sm.text-zinc-600 Computer Science - Computational Economics Emphasis
